@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PowerPulse">
+    <meta name="keywords" content="Gym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PowerPulse</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">   
+    <script src="js/register-service-worker.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script>
+    // Initialize Firebase
+    var firebaseConfig = {
+	apiKey: "AIzaSyAK31nGAKul2Br2u_Ysmmsb6SNR6dP-aUQ",
+	authDomain: "powerpulse-7210d.firebaseapp.com",
+	databaseURL: "https://powerpulse-7210d-default-rtdb.firebaseio.com/",
+	projectId: "powerpulse-7210d",
+	storageBucket: "powerpulse-7210d.appspot.com",
+	messagingSenderId: "594008092021",
+	appId: "1:594008092021:web:b6d1f62ba0ccc22027773c"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // Get a reference to the Firebase Realtime Database
+    var database = firebase.database();
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUyzU9np1IHpxkNfaAKecs_elVg4qYOXs&callback=initMap" async defer></script>
+
+</head>
+
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <nav class="canvas-menu mobile-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./class-details.html">Classes</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./team.html">Our Team</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./timetable.html">Timetable</a></li>
+                        <li><a href="./bmi-calculator.html">Bmi calculator</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./blog.html">Our blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./class-details.html">Classes</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./team.html">Our Team</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./timetable.html">Timetable</a></li>
+                                    <li><a href="./bmi-calculator.html">Bmi calculator</a></li>
+                                    <li><a href="./gallery.html">Gallery</a></li>
+                                    <li><a href="./blog.html">Our blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="top-option">
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumb-section set-bg" data-setbg="img/banner-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>Contact Us</h2>
+                        <div class="bt-option">
+                            <a href="./index.html">Home</a>
+                            <a href="#">Pages</a>
+                            <span>Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title contact-title">
+                        <span>Contact Us</span>
+                        <h2>GET IN TOUCH</h2>
+                    </div>
+                    <div class="contact-widget">
+                        <div class="cw-text">
+                            <i class="fa fa-map-marker"></i>
+                            <p>21/3 Naransewana Gunnepana, Kandy,<br/>Sri Lanka</p>
+                        </div>
+                        <div class="cw-text">
+                            <i class="fa fa-mobile"></i>
+                            <ul>
+                                <li>+94 767611910</li>
+                            </ul>
+                        </div>
+                        <div class="cw-text email">
+                            <i class="fa fa-envelope"></i>
+                            <p>lahiru2002.mb@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="leave-comment">
+                        <form id="feedbackForm" onsubmit="submitFeedback(event)">
+                            <input type="text" placeholder="Name" id="name">
+                            <input type="text" placeholder="Email" id="email">
+                            <textarea placeholder="Feedback" id="feedback"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>                                                
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="map"></div>
+            <br>
+            <button onclick="getLocationAndShowMap()" style="background-color: rgb(254, 119, 0); color: white; margin: 0 auto;">Get Location and Show Map</button>
+            <p id="userLocation"></p>          
+    </section>
+
+    <div class="gettouch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-map-marker"></i>
+                        <p>21/3 Naransewana Gunnepana, Kandy,<br/>Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-mobile"></i>
+                        <ul>
+                            <li>+94 767611910</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gt-text email">
+                        <i class="fa fa-envelope"></i>
+                        <p>lahiru2002.mb@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="fs-about">
+                        <div class="fa-logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="class-details.html">Classes</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="signup.html">Login</a></li>
+                            <li><a href="signup.html">My account</a></li>
+                            <li><a href="bmi-calculator.html">BMI</a></li>
+                            <li><a href="services.html">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-widget">
+                        <h4>Tips & Guides</h4>
+                        <div class="fw-recent">
+                            <h6><a href="blog.html">Physical fitness may help prevent depression, anxiety</a></h6>
+                            <ul>
+                                <li>3 min read</li>
+                                <li>20 Comment</li>
+                            </ul>
+                        </div>
+                        <div class="fw-recent">
+                            <h6><a href="blog.html">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                            <ul>
+                                <li>3 min read</li>
+                                <li>20 Comment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p>Refernces: <a href="https://www.pexels.com/" target="https://www.pexels.com/">Pexels</a> &
+                            <a href="https://www.pinterest.com/" target="https://www.pinterest.com/">Pinterest</a</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="serviceworker.js"></script>
+    <script src="your_script.js"></script>
+
+    <script>
+        function submitFeedback(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+    
+            // Get form input values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var feedbackText = document.getElementById('feedback').value;
+    
+            // Create a feedback object
+            var feedbackData = {
+                name: name,
+                email: email,
+                feedback: feedbackText
+            };
+    
+            // Push the feedback data to Firebase Realtime Database
+            var feedbackRef = database.ref('feedback');
+            feedbackRef.push(feedbackData);
+    
+            // Clear the form fields after submission (optional)
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('feedback').value = '';
+    
+            alert('Feedback submitted successfully!');
+        }
+    </script>
+
+<script>
+    // Initialize a map object
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 0, lng: 0 }, // Default center
+        zoom: 15, // Adjust the zoom level as needed
+    });
+}
+
+function getLocationAndShowMap() {
+    if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var userLatitude = position.coords.latitude;
+            var userLongitude = position.coords.longitude;
+
+            // Display the user's location
+            var userLocationElement = document.getElementById('userLocation');
+            userLocationElement.textContent = 'Your current location: Latitude ' + userLatitude + ', Longitude ' + userLongitude;
+
+            // Update the map with a marker at the user's location
+            var userLatLng = new google.maps.LatLng(userLatitude, userLongitude);
+            map.setCenter(userLatLng); // Center the map on the user's location
+            var marker = new google.maps.Marker({
+                position: userLatLng,
+                map: map,
+                title: 'Your Location'
+            });
+        }, function(error) {
+            console.error('Error getting geolocation:', error);
+        });
+    } else {
+        console.error('Geolocation is not supported by this browser.');
+    }
+}
+    </script>
+    
+    <script>
+        window.addEventListener('load', () => {
+    if (!navigator.onLine) {
+        window.location.href = 'fallback.html';
+    }
+});
+
+    </script>
+
+</body>
+
+</html>
